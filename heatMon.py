@@ -3,7 +3,7 @@ import paho.mqtt.client as mqtt
 import time
 import datetime
 
-# SERIAL PORT CONFIGURATION #
+# SERIAL PORT CONFIGURATION  #
 serialPort = serial.Serial(port = "/dev/ttyUSB0", baudrate=19200, stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE)
 
 # VARIABLE DECLARATION #
