@@ -6,13 +6,21 @@ I have connected a H1-interface from Husdata (www.husdata.se) to a Raspberry Pi 
 The service is installed as /lib/systemd/system/heatMon.service and requires "screen" to be installed. In this way, I can always attach to my service and monitor what it does.
 
 [Unit]
+
 Description=HomeMate heatMon
+
 After=multi-user.target
 
+
 [Service]
+
 Type=forking
+
 User=pi
+
 ExecStart=/usr/bin/screen -dmS heatMon /user/bin/python3 /home/pi/Python/heatMon/heatMon.py
 
+
 [Install]
+
 WantedBy=multi-user.target
