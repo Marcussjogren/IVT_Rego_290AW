@@ -1,5 +1,5 @@
 # IVT_Rego_290AW
-This is the code I use to monitor my heatpump and publish its values via MQTT.
+This is the code I use to monitor my heatpump and publish its values via MQTT. In my case, I have Home Assistant which is listening to the MQTT topic and receiving the data.
 
 I have connected a H1-interface from Husdata (www.husdata.se) to a Raspberry Pi Zero Wireless, which runs the code.
 
