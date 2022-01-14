@@ -6,6 +6,7 @@ I have connected a H1-interface from Husdata (www.husdata.se) to a Raspberry Pi 
 
 <h2>Service</h2>
 The service is installed as /lib/systemd/system/heatMon.service and requires "screen" to be installed. In this way, I can always attach to my service and monitor what it does.
+I connect to the service with "screen -r heatMon"
 
 [Unit]
 
