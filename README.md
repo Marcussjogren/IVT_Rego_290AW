@@ -10,7 +10,9 @@ Clone the repo and create a .env-file in the repository folder which contains th
 <i>I'm not really sure about the discovery-part of mqtt right now, I'm just testing it out.</i>
 
 MQTT_SERVER = "YOUR SERVER"
+
 MQTT_TOPIC = "MQTT TOPIC"
+
 MQTT_DISCOVERY_TOPIC = "DISCOVERY TOPIC"
 
 <h2>Service</h2>
