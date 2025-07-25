@@ -61,7 +61,7 @@ def calcRegValue(regValueHex):
 
         return ((hexToDec(regValueHex)-subValue)/10)
 
-def on_connect(client, userdata, flags, rc):
+def on_connect(client, userdata, flags, rc, properties):
         global flag_connected
         flag_connected = 1
 
