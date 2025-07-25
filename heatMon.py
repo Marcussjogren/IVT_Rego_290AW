@@ -12,7 +12,7 @@ regValue = ""
 messageLastSent = time.time()
 messageSendInterval = 15
 flag_connected = 0
-MQTT_SERVER = "10.10.0.203"
+MQTT_SERVER = "SERVER"
 
 heatPumpValues = {
 	"radiatorForward": "",
