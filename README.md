@@ -9,11 +9,16 @@ Clone the repo and create a .env-file in the repository folder which contains th
 
 <i>I'm not really sure about the discovery-part of mqtt right now, I'm just testing it out.</i>
 
+<h3>Environment file</h3>
 MQTT_SERVER = "YOUR SERVER"
 
 MQTT_TOPIC = "MQTT TOPIC"
 
 MQTT_DISCOVERY_TOPIC = "DISCOVERY TOPIC"
+
+
+<h3>Requirements</h3>
+Install the requirements by running "pip3.12 install -r requirements.txt"
 
 <h2>Service</h2>
 The service is installed as /lib/systemd/system/heatMon.service and requires "screen" to be installed. In this way, I can always attach to my service and monitor what it does.
