@@ -72,7 +72,7 @@ def on_disconnect(client,userdata, rc):
 logging.basicConfig(filename='/var/log/heatMon.log', filemode='a', format='%(asctime)s - %(message)s', level=logging.INFO)
 
 # MQTT SETUP #
-client = mqtt.Client()
+client = mqtt.Client(mqtt.CallBackAPIVersion.VERSION2)
 client.on_connect = on_connect
 client.on_disconnect = on_disconnect
 client.connect(MQTT_SERVER,1883,60)
