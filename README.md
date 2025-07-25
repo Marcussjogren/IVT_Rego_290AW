@@ -5,11 +5,14 @@ This is the code I use to monitor my heatpump and publish its values via MQTT. I
 I have connected a H1-interface from Husdata (www.husdata.se) to a Raspberry Pi Zero Wireless, which runs the code.
 
 <h2>Setup:</h2>
-Clone the repo and create a .env-file in the repository folder which contains the below
+Clone the repo and create a .env-file in the repository folder which contains the below.
+
 <i>I'm not really sure about the discovery-part of mqtt right now, I'm just testing it out.</i>
 
 MQTT_SERVER = "YOUR SERVER"
+
 MQTT_TOPIC = "MQTT TOPIC"
+
 MQTT_DISCOVERY_TOPIC = "DISCOVERY TOPIC"
 
 <h2>Service</h2>
