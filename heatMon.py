@@ -75,7 +75,7 @@ logging.basicConfig(filename='/var/log/heatMon.log', filemode='a', format='%(asc
 client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 client.on_connect = on_connect
 client.on_disconnect = on_disconnect
-client.connect(MQTT_SERVER,1883,60)
+client.connect("10.10.0.203",1883,60)
 client.loop_start()
 # MQTT - Set Last Will
 print("MQTT - Setting Last Will")
