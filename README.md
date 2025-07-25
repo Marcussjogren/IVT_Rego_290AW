@@ -37,7 +37,7 @@ Type=forking
 
 User=pi
 
-ExecStart=/usr/bin/screen -dmS heatMon /user/bin/python3 /home/pi/Python/heatMon/heatMon.py
+ExecStart=/usr/bin/screen -dmS heatMon /user/bin/python3 /<path>/heatMon.py
 
 
 [Install]
