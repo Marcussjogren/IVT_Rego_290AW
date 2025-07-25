@@ -71,11 +71,13 @@ def on_disconnect(client,userdata, rc):
 # LOGGING SETUP #
 logging.basicConfig(filename='/var/log/heatMon.log', filemode='a', format='%(asctime)s - %(message)s', level=logging.INFO)
 
+print(f"Start MQTT-connect.\n Server: {MQTT_SERVER}\n Topic: {MQTT_TOPIC}")
+
 # MQTT SETUP #
 client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 client.on_connect = on_connect
 client.on_disconnect = on_disconnect
-client.connect("10.10.0.203",1883,60)
+client.connect(MQTT_SERVER,1883,60)
 client.loop_start()
 # MQTT - Set Last Will
 print("MQTT - Setting Last Will")
