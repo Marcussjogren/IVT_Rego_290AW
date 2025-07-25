@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 import os
 
 # SCRIPT CONFIGURATION #
+load_dotenv()
 MQTT_SERVER = os.getenv('MQTT_SERVER')
 MQTT_TOPIC = os.getenv('MQTT_TOPIC')
 MQTT_DISCOVERY_TOPIC = os.getenv('MQTT_DISCOVERY_TOPIC')
